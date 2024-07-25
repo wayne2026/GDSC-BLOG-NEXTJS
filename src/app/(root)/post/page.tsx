@@ -1,6 +1,6 @@
 import RecentBlog from '@/components/custom/recent-blog';
+import { blogData } from '@/data/blog';
 import React from 'react'
-import { blogData } from '../page';
 
 const BlogPage = () => {
     return (

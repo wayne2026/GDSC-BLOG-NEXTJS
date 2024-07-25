@@ -1,8 +1,8 @@
 import RecentBlog from '@/components/custom/recent-blog';
 import React from 'react';
-import { blogData } from '../../page';
 import Link from 'next/link';
 import Image from 'next/image';
+import { blogData } from '@/data/blog';
 
 const AuthorSlug = () => {
     return (

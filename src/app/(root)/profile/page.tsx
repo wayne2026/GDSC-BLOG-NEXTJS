@@ -1,8 +1,8 @@
 import RecentBlog from '@/components/custom/recent-blog';
 import React from 'react';
-import { blogData } from '../page';
 import Image from 'next/image';
 import Link from 'next/link';
+import { blogData } from '@/data/blog';
 
 const Profile = () => {
     return (
