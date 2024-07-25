@@ -7,14 +7,15 @@ import { MdArrowOutward } from 'react-icons/md';
 const Home = () => {
 
     return (
-        <div className='flex flex-col items-center justify-center bg-white dark:bg-gray-900'>
-            <div className="relative isolate px-6 py-32 lg:px-24">
-                <div className='flex flex-col justify-center items-center gap-8'>
-                    <Image src="/gdsc_color.png" alt='gdsc-logo' width={200} height={120} />
-                    <h1 className='text-7xl text-gray-500 font-normal text-center' style={{ transform: 'scaleY(0.9)' }}>Google Developer Student Clubs</h1>
+        <div className='flex flex-col items-center justify-center bg-white dark:bg-gray-900 '>
+            <div className="relative isolate px-6 min-w-fit mt-36 mb-10 lg:px-24">
+                <div className=' relative flex flex-col items-center'>
+                    <div className='z-10 -top-16 absolute bg-white '>
+                        <h1 className='text-center border-[7px] text-7xl font-medium text-gray-8 p-4 font-Orbitron border-black'>BINARY BARD</h1>
+                    </div>
+                    <Image src='/background.jpg' alt='' width={1300} height={400} />
                 </div>
             </div>
-
             <div className="container px-6 py-8 mx-auto text-center">
                 <h1 className="text-3xl font-bold text-gray-800 dark:text-white lg:text-4xl">Browse Recent Blogs</h1>
                 <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -37,9 +38,9 @@ const Home = () => {
                     </Link>
                 </div>
                 <hr className="rounded-full border" />
-                <div className='flex flex-wrap justify-center items-center w-full my-8 gap-8'>
+                <div className='pb-24 flex flex-wrap justify-center items-center w-full my-8 gap-8'>
                     {
-                        [1,2,3].map(item => (
+                        [1, 2, 3].map(item => (
                             <Link href="/author/34" key={item} className="flex flex-col lg:flex-row justify-center items-center gap-8 px-6 py-4 border border-gray-300 cursor-pointer bg-gray-50 hover:bg-white hover:shadow-xl rounded-2xl transform transition-transform duration-100 hover:-translate-y-2">
                                 <Image height={100} width={100} className="object-cover rounded-full" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="" />
                                 <div className='flex flex-col justify-center mr-6'>
