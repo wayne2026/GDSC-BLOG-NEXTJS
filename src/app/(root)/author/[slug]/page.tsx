@@ -1,20 +1,15 @@
 import RecentBlog from '@/components/custom/recent-blog';
 import React from 'react';
-import { blogData } from '../page';
-import Image from 'next/image';
+import { blogData } from '../../page';
 import Link from 'next/link';
+import Image from 'next/image';
 
-const Profile = () => {
+const AuthorSlug = () => {
     return (
         <div className='flex flex-col items-center justify-center bg-white dark:bg-gray-900'>
             <div className="flex flex-col justify-center items-center mt-16 gap-5">
-                <div className='relative h-32 w-32 rounded-full border-2 flex justify-center items-center'>
-                    <Image height={100} width={100} className="object-cover text-center rounded-full" src="https://github.com/shadcn.png" alt="" />
-                    <button className="absolute bottom-0 right-0 bg-slate-300 text-black rounded-full p-1">
-                        <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.414 2.586a2 2 0 112.828 2.828L6.828 18.828l-4 1 1-4L17.414 2.586zM19 5l-1-1L16 6l1 1 2-2zM5 18v-2.5L15.5 5 18 7.5 7.5 18H5z" fill="currentColor" />
-                        </svg>
-                    </button>
+                <div className='h-32 w-32 rounded-full border-2 flex justify-center items-center'>
+                    <Image width={100} height={100} className="object-cover text-center rounded-full" src="https://github.com/shadcn.png" alt="" />
                 </div>
                 <div className='flex flex-col justify-center items-center'>
                     <h1 className="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl">John Doe</h1>
@@ -59,14 +54,6 @@ const Profile = () => {
             </div>
             <div className='w-[85%] mt-8 px-2 md:px-6 lg:px-16 mx-auto'>
                 <hr className="rounded-full border-2 border-gray-400 dark:border-gray-100" />
-                <div className='flex justify-between items-center m-4'>
-                    <p className='text-gray-800 text-2xl font-semibold'>My Blogs</p>
-                    <Link href="/create" className="rounded-md px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-indigo-600 text-indigo-600">
-                        <span className="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-indigo-600 top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-                        <span className="relative text-indigo-600 transition duration-300 group-hover:text-white ease">Create New</span>
-                    </Link>
-                </div>
-                <hr className="rounded-full border-2 border-gray-400 dark:border-gray-100" />
             </div>
             <RecentBlog data={blogData} />
             <button className="relative inline-block text-lg group mb-12">
@@ -81,4 +68,4 @@ const Profile = () => {
     )
 }
 
-export default Profile;
+export default AuthorSlug;
