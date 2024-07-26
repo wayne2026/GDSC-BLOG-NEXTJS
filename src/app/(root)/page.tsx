@@ -7,13 +7,16 @@ import { MdArrowOutward } from 'react-icons/md';
 const Home = () => {
 
     return (
-        <div className='flex flex-col items-center justify-center bg-white dark:bg-gray-900 '>
-            <div className="relative isolate px-6 min-w-fit mt-36 mb-10 lg:px-24">
+        <div className='flex flex-col items-center justify-center bg-white dark:bg-gray-900'>
+            <div className="relative isolate px-6 min-w-fit  mt-14 md:mt-20 lg:mt-28 xl:mb-10 lg:px-24">
                 <div className=' relative flex flex-col items-center'>
-                    <div className='z-10 -top-16 absolute bg-white '>
-                        <h1 className='text-center border-[7px] text-7xl font-medium text-gray-8 p-4 font-Orbitron border-black'>BINARY BARD</h1>
+                    <div className='z-10 -top-7 md:-top-10  lg:-top-14 absolute bg-white '>
+                        <h1 className='max-sm: text-center border-[0.4vw] md:text-4xl text-3xl p-2 lg:text-5xl xl:text-7xl md:p-4  font-medium text-gray-8  font-Orbitron border-black'>BINARY BARD</h1>
                     </div>
-                    <Image src='/background.jpg' alt='' width={1300} height={400} />
+                    <div  className=''>
+                        <Image src='/background.jpg' alt='background GDSC' width={1400} height={400} />
+
+                    </div>
                 </div>
             </div>
             <div className="container px-6 py-8 mx-auto text-center">

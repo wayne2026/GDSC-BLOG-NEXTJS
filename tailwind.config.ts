@@ -34,7 +34,8 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily:{
-        Orbitron:['orbitron','sans-serif']
+        Orbitron:['orbitron','sans-serif'],
+        Lora:['lora','sans-serif']
       }
     },
   },
